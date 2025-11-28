@@ -61,14 +61,5 @@ This repository contains a simple Task Management web application built to satis
    - User will only see tasks assigned to their username (the dummy login returns the entered username).
    - PM dashboard shows overdue tasks as a notification — this satisfies the optional bonus.
 
-## What to attach for submission
-- A short screen recording (use any screen recorder) showing:
-  - PM login → Add task → Assign to user.
-  - User login → Update status.
-  - PM dashboard showing overdue notice (you can create tasks with past deadlines to demo).
-- Include this README and the zipped project.
 
-## Notes for evaluator
-- Authentication is intentionally simple (dummy) per assignment instruction.
-- The server exposes REST APIs at `/api/*` if you want to test via Postman.
 
