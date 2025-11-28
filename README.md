@@ -12,8 +12,6 @@ This repository contains a simple Task Management web application built to satis
 1. View tasks assigned to them.
 2. Update task status (Pending, In Progress, Done).
 
-**Bonus (Optional)**: If any user misses a task deadline, automatically notify the PM (this app shows overdue tasks on PM dashboard).
-
 ## Tech stack used
 - Python 3.8+ (Flask)
 - SQLite (file-based)
