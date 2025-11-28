@@ -1,9 +1,7 @@
-# Task Management Assignment
+# Task Management Web Applciation
 
 This repository contains a simple Task Management web application built to satisfy the internship assignment requirements.
-
-## What the assignment asked
-- Build a simple Task Management web application where Project Managers (PMs) and Users can manage tasks effectively. (Source: PDF assignment).
+- Build a simple Task Management web application where Project Managers (PMs) and Users can manage tasks effectively.
 
 **PM Capabilities**
 1. Login (dummy login is fine).
@@ -14,7 +12,7 @@ This repository contains a simple Task Management web application built to satis
 1. View tasks assigned to them.
 2. Update task status (Pending, In Progress, Done).
 
-**Bonus (Optional)**: If any user misses a task deadline, automatically notify the PM (this app shows overdue tasks on PM dashboard). fileciteturn0file0
+**Bonus (Optional)**: If any user misses a task deadline, automatically notify the PM (this app shows overdue tasks on PM dashboard).
 
 ## Tech stack used
 - Python 3.8+ (Flask)
@@ -59,7 +57,7 @@ This repository contains a simple Task Management web application built to satis
    - On the login box, enter any username (e.g., `alice`) and select role `pm` or `user`.
    - PM can add/edit/delete tasks, assign to users.
    - User will only see tasks assigned to their username (the dummy login returns the entered username).
-   - PM dashboard shows overdue tasks as a notification — this satisfies the optional bonus.
+   - PM dashboard shows overdue tasks as a notification.
 
 
 
