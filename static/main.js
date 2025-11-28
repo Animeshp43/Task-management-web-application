@@ -86,6 +86,7 @@ loginBtn.addEventListener("click", async () => {
    ------------------------- */
 
 function afterLogin(){
+  document.getElementById("welcomeTitle").innerText = "Welcome " + user.name;
   document.getElementById("loginBox").style.display = "none";
   document.getElementById("main").style.display = "block";
   document.getElementById("meName").innerText = user.name;
