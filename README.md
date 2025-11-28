@@ -1,4 +1,4 @@
-# Task Management Web Applciation
+# Task Management Web Application
 
 This repository contains a simple Task Management web application built to satisfy the internship assignment requirements.
 - Build a simple Task Management web application where Project Managers (PMs) and Users can manage tasks effectively.
