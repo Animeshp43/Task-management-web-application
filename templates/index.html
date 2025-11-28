@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Task Management App</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Management</h1>
+    <div id="loginBox" class="card">
+      <h3>Login (Dummy)</h3>
+
+      <!-- Username + inline error -->
+      <div style="display:flex; flex-direction:column; gap:4px; width:300px;">
+        <input id="username" placeholder="username (e.g., alice)" autocomplete="off" />
+        <div id="usernameError" class="inline-error" aria-live="polite" style="display:none;">Field should not be empty: Username is required for Users</div>
+      </div>
+
+      <div style="margin-top:8px;">
+        <select id="role">
+          <option value="pm">Project Manager (PM)</option>
+          <option value="user">User</option>
+        </select>
+      </div>
+
+      <div style="margin-top:8px;">
+        <button id="loginBtn">Login</button>
+      </div>
+    </div>
+
+    <div id="main" style="display:none;">
+      <div class="top">
+        <div id="pmPanel" style="display:none;" class="card">
+          <h3>PM Panel</h3>
+          <button id="showAdd">Add Task</button>
+          <div id="overdueNotice"></div>
+        </div>
+
+        <div id="userPanel" style="display:none;" class="card">
+          <h3>User Panel</h3>
+          <div>Your Name: <span id="meName"></span></div>
+        </div>
+      </div>
+
+      <div id="taskForm" class="card" style="display:none;">
+  <h3 id="formTitle">Add Task</h3>
+
+  <input id="t_title" placeholder="Title" />
+  <textarea id="t_desc" placeholder="Description"></textarea>
+
+  <div style="display:flex; gap:10px; align-items:center;">
+    <select id="t_assigned"></select>
+    <input id="t_assigned_name" placeholder="Assigned username" readonly />
+  </div>
+
+  <input id="t_deadline" type="date"/>
+
+  <select id="t_status">
+    <option>Pending</option>
+    <option>In Progress</option>
+    <option>Done</option>
+  </select>
+
+  <!-- INLINE ERROR BOX FOR TASK FORM -->
+  <div id="taskFormError" class="inline-error" style="display:none; margin-top:4px;"></div>
+
+  <div style="margin-top:8px;">
+    <button id="saveTask">Save</button>
+    <button id="cancelTask">Cancel</button>
+  </div>
+</div>
+
+
+      <div id="taskList" class="card">
+        <h3>Tasks</h3>
+        <table id="tasksTable">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Assigned</th>
+              <th>Deadline</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
