@@ -2,8 +2,8 @@
 
 This repository contains a simple Task Management web application built to satisfy the internship assignment requirements.
 
-## What the assignment asked (extracted)
-- Build a simple Task Management web application where Project Managers (PMs) and Users can manage tasks effectively. (Source: PDF assignment). fileciteturn0file0
+## What the assignment asked
+- Build a simple Task Management web application where Project Managers (PMs) and Users can manage tasks effectively. (Source: PDF assignment).
 
 **PM Capabilities**
 1. Login (dummy login is fine).
